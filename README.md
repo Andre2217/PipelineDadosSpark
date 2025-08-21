@@ -62,3 +62,7 @@ Ao rodar o código, a pasta ```dados``` será criada automaticamente com:
     →Velocidade média plausível (< 200 km/h)
 
 - Deduplicação por chave composta
+
+## Link para colab onde o projeto foi desenvolvido
+
+- ```https://colab.research.google.com/drive/1vkU7tjTTowTeIKGcW2Xa7nHqgS1_rnin?usp=sharing ```
