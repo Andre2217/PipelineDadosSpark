@@ -21,7 +21,7 @@ O objetivo é baixar dados brutos, tratar, enriquecer, aplicar filtros de qualid
 
 Clone o repositório:
 ```bash
-git clone https://github.com/SEU-USUARIO/SEU-REPO.git
+git clone https://github.com/Andre2217/PipelineDadosSpark.git
 cd SEU-REPO
 ```
 Instale as dependências:
