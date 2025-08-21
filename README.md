@@ -33,24 +33,24 @@ Execute o script:
 python PipelineSpark.py
 ```
 
-Ao rodar o código, a pasta dados será criada automaticamente com:
+Ao rodar o código, a pasta ```dados``` será criada automaticamente com:
 
-bruto/ → arquivos .parquet baixados da internet
+- ```bruto/``` → arquivos ```.parquet``` baixados da internet
 
-saida_csv_particionado/ → CSVs tratados separados por ano e mês
+- ```saida_csv_particionado/``` → CSVs tratados separados por ano e mês
 
-saida_csv_unico/ → CSV tratado em um único arquivo (limitado a 200k linhas para teste)
+- ```saida_csv_unico/``` → CSV tratado em um único arquivo (limitado a 200k linhas para teste)
 
-- Transformações e Limpeza
+## Transformações e Limpeza
 
-→Coerção de tipos (datas, números, valores monetários)
+- Coerção de tipos (datas, números, valores monetários)
 
-→Enriquecimento: cálculo de ano, mes, duracao_minutos, velocidade_media_kmh
+- Enriquecimento: cálculo de ano, mes, duracao_minutos, velocidade_media_kmh
 
-→Filtros de qualidade:
-  Valores monetários ≥ 0
-  Duração plausível (até 24h)
-  Corridas com distância ou valor > 0
-  Velocidade média plausível (< 200 km/h)
+- Filtros de qualidade:
+    → Valores monetários ≥ 0
+    →Duração plausível (até 24h)
+    →Corridas com distância ou valor > 0
+    →Velocidade média plausível (< 200 km/h)
 
-→Deduplicação por chave composta
+- Deduplicação por chave composta
