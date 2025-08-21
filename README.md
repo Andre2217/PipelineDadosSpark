@@ -10,9 +10,13 @@ O objetivo é baixar dados brutos, tratar, enriquecer, aplicar filtros de qualid
 ## Estrutura do Projeto
 
 /PipelineSpark.py -> Código principal da pipeline
+
 /dados/ -> Pasta criada automaticamente ao rodar o código
+
 /bruto/ -> Dados brutos baixados da internet
+
 /saida_csv_particionado/ -> Dados tratados particionados por ano/mes
+
 /saida_csv_unico/ -> Dados tratados em um único CSV (limitado a 200k linhas)
 
 ---
@@ -48,9 +52,13 @@ Ao rodar o código, a pasta ```dados``` será criada automaticamente com:
 - Enriquecimento: cálculo de ano, mes, duracao_minutos, velocidade_media_kmh
 
 - Filtros de qualidade:
+
     → Valores monetários ≥ 0
+  
     →Duração plausível (até 24h)
+  
     →Corridas com distância ou valor > 0
+  
     →Velocidade média plausível (< 200 km/h)
 
 - Deduplicação por chave composta
